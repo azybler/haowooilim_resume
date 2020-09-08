@@ -1,0 +1,259 @@
+\documentclass[12pt,twoside,a4paper]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\expHeading}[3]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, \textit{\small#2} & #3
+    \end{tabular*}\vspace{-15pt}
+}
+
+\newcommand{\expSubHeading}[2]{
+  \vspace{0pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+    \end{tabular*}\vspace{-18pt}
+}
+
+\newcommand{\expDescription}[1]{
+  \vspace{0pt}
+  \textbf{Responsibilities}: {#1}
+  \vspace{6pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}
+{\textwidth}
+{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}
+  {\Large Hao Wooi Lim}} & Email: \href{mailto:me@haowooi.me}{me@haowooi.me}\\
+  {LinkedIn: \href{https://www.linkedin.com/in/haowooilim/}{linkedin.com/in/haowooilim}} & Mobile: +65 8808 7515 \\
+  {Github: \href{https://www.github.com/azybler/}{github.com/azybler}} & Visa: Singapore PR \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tunku Abdul Rahman University (UTAR)}{Petaling Jaya, Malaysia}
+      {Bachelor of Information Technology (Hons) Computer Engineering}{May 2005 -- May 2008}
+
+    \resumeSubheading
+      {Tunku Abdul Rahman College (KTAR)}{Setapak, Malaysia}
+      {Diploma in Science (Information Systems Engineering)}{Mar. 2004 -- Mar. 2005}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \expHeading
+      {Grab}{Singapore}{Jul. 2014 -- Now (6 years)}
+
+    \expSubHeading
+      {Senior Backend Engineer}{Jul. 2018 -- Now (2 years)}
+
+      \expDescription
+        {Developed/maintained several Grab's geographical systems, e.g. multi-model route planner, map-matching (Snap-to-Road) for real-time driver positioning, routing engine for routing, and ETA calculation. Also helped perform on-call duties, e.g. assists in investigations, debugging production issues.}
+
+    \expSubHeading
+      {Senior Full Stack Developer}{Jan. 2016 -- Jun. 2018 (2 years, 6 months)}
+
+      \expDescription
+        {Developed/maintained Grab's various internal \& public-facing web apps, e.g. Driver Signup, Share My Ride, Grab for Business using technologies like Ruby on Rails, JavaScript, React.js, GraphQL \& MySQL.}
+
+    \expSubHeading
+      {Senior NodeJS Developer}{Jul. 2014 -- Jun. 2014 (1 year, 6 months)}
+
+      \expDescription
+        {Developed/maintained Dispatcher (one of the early core systems of Grab, responsible for notification, bidding \& acceptance of all rides). Technologies like NodeJS, MySQL is used.}
+
+    \expHeading
+      {YellowElevator}{Malaysia}{Jan. 2014 -- Jun. 2014 (6 months)}
+
+    \expSubHeading
+      {Senior Software Developer}{}
+
+      \expDescription
+        {Developed/maintained YellowElevator web site. Dabble with PHP using Zend Framework \& MySQL for the database, JQuery \& some vanilla JavaScript on the frontend. Worked on the site's Notifications Center. Also helped in requirement analysis \& architecture design.}
+
+    \expHeading
+      {Time.ly, GuideAdvisor}{Contract/Remote}{Mar. 2013 -- Oct. 2013 (8 months)}
+
+    \expSubHeading
+      {Software Developer}{}
+
+      \expDescription
+        {Developed/maintained a popular calendar widget for wordpress called timely \& GuideAdvisor site. Developed backend node.js-based API router that is covered by BDD test written with vows. Worked on features like performing filtering (selectize, select2), automatic layout (Masonry), infinite scrolling.}
+
+    \expHeading
+      {EzyPay}{Malaysia}{Jul. 2011 -- Jan. 2013 (2 years, 7 months)}
+
+    \expSubHeading
+      {Senior Developer}{}
+
+      \expDescription
+        {Helped in development/maintenance of iConnect360 Silverlight application. Dabbling with C\# \& .NET 4.5, Telerik RadControls for Silverlight. Worked on the site's new Booking management module \& E-mail campaign management module. Software Development is done via true Scrum methodologies. Heavily involved in requirement analysis \& planning/estimation.}
+
+    \expHeading
+      {Panasonic R\&D Centre Malaysia}{Malaysia}{Jun. 2008 -- Jul. 2009 (2 years, 2 months)}
+
+    \expSubHeading
+      {Research \& Development Engineer}{}
+
+      \expDescription
+        {Developed software that manages Panasonic's various PBX system using the Qt library \& C\#. Tasked to understand existing large C++ codebase \& fix bugs in existing software, perform testing on software that sometimes require interfacing with hardware \& add new functionality according to hardware specifications.}
+
+  \resumeSubHeadingListEnd
+
+% --------PAST & CURRENT PROJECTS------------
+\section{Past \& Current Projects}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Snap-to-Road}{: This is a fundamental microservice in Grab geographical systems to accurately position drivers. It’s built with Go language \& Redis as the data store. Known as “map matching” in the research community, our approach uses the hidden Markov model. Initial implementation is adapted from the paper “Hidden Markov Map Matching Through Noise \& Sparseness”. As the initial author of Snap-to-Road V3, I’m involved in the initiation \& planning phase and has successfully brought it to production. V3 has novel aspects not documented in the paper that enables real-time snapping that will be documented in a patent pending submission where I’m also one of the core authors. I also helped to reduce infra costs by means of code optimization (e.g. making use of Sync Pool) and revising ASG policies via terraform.}
+   }
+   \item{
+     \textbf{Multi-modal route planner}{: This is a microservice to suggest best routing plan across various modalities, e.g. Trains, Buses and Grab rides. Initial implementation is adapted from the paper “Connection Scan Algorithm”. The service is a joint-work with a fellow team member.}
+   }
+   \item{
+     \textbf{Grab for Business}{: Consists of a web portal, admin portal, revamp of Grab’s passenger app \& various other integration work with the rest of Grab internal system. The system as a whole allows businesses to manage ride policies, payment methods \& employees. Employees of enrolled businesses will be able to take corporate rides in accordance to the company’s pre-set policies.}
+   }
+   \item{
+     \textbf{Dispatcher}{: This is one of the major backend systems used in Grab that handles the sending/receiving of messages to/from driver such as a job broadcast to driver \& handling of bidding/cancelling etc. It broadcast jobs to driver using a persistent TCP connection to the driver. It is written using node.js. It initially uses the async library for control flow. I worked on the transition to use node-sync. I also worked on the separation of dispatcher into communication layer \& logic layer to achieve graceful restart that avoids the disconnection of every driver during every deployment.}
+   }
+   \item{
+     \textbf{Rotation-invariant License Plate Detector (Final year project)}{: This is a license plate detector developed with Pedro F. Felzenszwalb \& Daniel P. Huttenlocher's graph-based image segmentation algorithm (their algorithm is open source but I have to port it over to use OpenCV). It uses variance- based features \& is integrated with libsvm. It is written in C++ with OpenCV. The algorithm does not achieve groundbreaking results compared to existing solutions, but it was a novel method \& provides the basis for future Computer-Vision related research.)}
+   }
+ \resumeSubHeadingListEnd
+
+% --------AWARDS------------
+\section{Awards}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{The Rookie Award 2011}{\\Awarded for being the best overall new comer of the quarter (as voted by working colleagues in EzyPay.}
+   }
+   \item{
+     \textbf{The Exterminator Award 2011}{\\Awarded for being the best bug fixer of the quarter (as voted by working colleagues in EzyPay.}
+   }
+   \item{
+     \textbf{Bitwise 2009 Online Algorithm Programming Contest}{\\Placed 33rd among 2700 teams from around the world.}
+   }
+   \item{
+     \textbf{Microsoft Imagine Cup 2008 – Software Design}{\\Placed 2nd among 5 teams in the Malaysia finals.}
+   }
+   \item{
+     \textbf{Bitwise 2008 Online Algorithm Programming Contest}{\\Placed 24th among 2911 teams from around the world.}
+   }
+   \item{
+     \textbf{PanaGEEK 2007 programming competition}{\\Top 20 in the national first round, 3rd prize in the final round.}
+   }
+ \resumeSubHeadingListEnd
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Stacks}{: Ruby on Rails, ReactJS, hapi.js, GraphQL, Laravel, Silverlight}
+   }
+   \item{
+     \textbf{Databases}{: MySQL, Sqlite, Redis}
+   }
+   \item{
+     \textbf{Languages}{: Go, JavaScript, TypeScript, C, C++, PHP, C\#, Swift, Java, Rust, Ruby, SQL}
+   }
+   \item{
+     \textbf{Methodologies}{: Scrum, Kanban, Agile}
+   }
+ \resumeSubHeadingListEnd
+
+% --------PUBLICATIONS------------
+\section{Publications}
+ \resumeSubHeadingListStart
+   \item{
+     {Visual Objects Classification with Sliding Spatial Pyramid Matching, 2012}{\\https://arxiv.org/abs/1212.3767}
+   }
+   \item{
+     {Detection of License Plate Characters in Natural Scene with MSER and SIFT unigram Classifier, 2010}{\\https://ieeexplore.ieee.org/document/5686998}
+   }
+   \item{
+     {Vehicle License Plate Detection using Unigram Model and Difference-of-SURF Bigram Model with SVM, 2009}{\\https://www.semanticscholar.org/paper/PLATE-DETECTION-USING-UNIGRAM-MODEL-AND-BIGRAM-WITH-Lim-Tay/fd81d1a75e49c0e96c57ec2a64a259ee22af99fc}
+   }
+   \item{
+     {Two-stage License Plate Detection using Gentle Adaboost and SIFT-SVM, 2009}{\\https://ieeexplore.ieee.org/document/5175977}
+   }
+   \item{
+     {Fast Adaptive Graph-based Segmentation with application in Vehicle License Plate Detection, 2008}{\\https://www.semanticscholar.org/paper/Fast-Adaptive-Graph-based-Segmentation-with-in-Lim-Tay/6f0128a7630687189a9fdcafd15111f8e461ebb0}
+   }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
