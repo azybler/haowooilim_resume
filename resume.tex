@@ -93,10 +93,10 @@
 \begin{tabular*}
 {\textwidth}
 {l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}
+  \textbf{\href{https://haowooi.me/}
   {\Large Hao Wooi Lim, Simon}} & Email: \href{mailto:me@haowooi.me}{me@haowooi.me}\\
   {LinkedIn: \href{https://www.linkedin.com/in/haowooilim/}{linkedin.com/in/haowooilim}} & Mobile: +65 8808 7515 \\
-  {Github: \href{https://www.github.com/azybler/}{github.com/azybler}} & Visa: Singapore PR \\
+  {Github: \href{https://www.github.com/azybler/}{github.com/azybler}} & Visa: Singapore PR
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -123,19 +123,19 @@
       {Senior Backend Engineer}{Jul. 2018 -- Now (2 years)}
 
       \expDescription
-        {Developed/maintained several Grab's geographical systems, e.g. multi-model route planner, map-matching (Snap-to-Road) for real-time driver positioning, routing engine for routing, and ETA calculation. Also helped perform on-call duties, e.g. assists in investigations, debugging production issues.}
+        {Developed/maintained several Grab's geographical systems, e.g. multi-modal route planner, \href{https://en.wikipedia.org/wiki/Map_matching}{map-matching} (Snap-to-Road), routing, and ETA calculation. Additionally, performed on-call duties, e.g. assists in investigations, debugging production issues.}
 
     \expSubHeading
       {Senior Full Stack Developer}{Jan. 2016 -- Jun. 2018 (2 years, 6 months)}
 
       \expDescription
-        {Developed/maintained Grab's various internal \& public-facing web apps, e.g. Driver Signup, Share My Ride, Grab for Business using technologies like Ruby on Rails, JavaScript, React.js, GraphQL \& MySQL.}
+        {Developed/maintained Grab's various internal \& public-facing web apps, e.g. Driver Onboarding Platform, Share My Ride, \href{https://business.grab.com/}{Grab for Business}, FlagsView using technologies like \href{https://rubyonrails.org/}{Ruby on Rails}, JavaScript, \href{https://reactjs.org/}{ReactJS}, \href{https://graphql.org/}{GraphQL} \& \href{https://www.mysql.com/}{MySQL}.}
 
     \expSubHeading
-      {Senior NodeJS Developer}{Jul. 2014 -- Jun. 2014 (1 year, 6 months)}
+      {Senior Node.js Developer}{Jul. 2014 -- Jun. 2014 (1 year, 6 months)}
 
       \expDescription
-        {Developed/maintained Dispatcher (one of the early core systems of Grab, responsible for notification, bidding \& acceptance of all rides). Technologies like NodeJS, MySQL is used.}
+        {Developed/maintained Dispatcher (one of the early core systems of Grab, responsible for notification, bidding \& acceptance of all rides). Technologies like \href{https://nodejs.org/}{Node.js}, \href{https://www.mysql.com/}{MySQL} is used.}
 
     \expHeading
       {YellowElevator}{Malaysia}{Jan. 2014 -- Jun. 2014 (6 months)}
@@ -144,7 +144,7 @@
       {Senior Software Developer}{}
 
       \expDescription
-        {Developed/maintained YellowElevator web site. Dabble with PHP using Zend Framework \& MySQL for the database, JQuery \& some vanilla JavaScript on the frontend. Worked on the site's Notifications Center. Also helped in requirement analysis \& architecture design.}
+        {Developed/maintained YellowElevator web site. Dabble with PHP using \href{https://framework.zend.com/}{Zend Framework} \& \href{https://www.mysql.com/}{MySQL} for the database, JQuery \& some vanilla JavaScript on the frontend. Worked on the site's Notifications Center. Also helped in requirement analysis \& architecture design.}
 
     \expHeading
       {Time.ly, GuideAdvisor}{Contract/Remote}{Mar. 2013 -- Oct. 2013 (8 months)}
@@ -179,16 +179,16 @@
 \section{Past \& Current Projects}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Snap-to-Road}{: This is a fundamental microservice in Grab geographical systems to accurately position drivers. It’s built with Go language \& Redis as the data store. Known as “map matching” in the research community, our approach uses the hidden Markov model. Initial implementation is adapted from the paper “Hidden Markov Map Matching Through Noise \& Sparseness”. As the initial author of Snap-to-Road V3, I’m involved in the initiation \& planning phase and has successfully brought it to production. V3 has novel aspects not documented in the paper that enables real-time snapping that will be documented in a patent pending submission where I’m also one of the core authors. I also helped to reduce infra costs by means of code optimization (e.g. making use of Sync Pool) and revising ASG policies via terraform.}
+     \textbf{Snap-to-Road (Grab)}{: This is a microservice to accurately position drivers. It’s built with \href{https://golang.org/}{Go} \& Redis as the data store. Known as “\href{https://en.wikipedia.org/wiki/Map_matching}{map matching}” in the research community, our approach uses the hidden Markov model. Initial implementation is adapted from the paper “Hidden Markov Map Matching Through Noise \& Sparseness”. As the initial author of Snap-to-Road V3, I’m involved in the initiation \& planning phase and has successfully brought it to production. V3 has novel aspects not documented in the paper that enables real-time snapping that will be documented in a patent pending submission where I’m also one of the core authors. I also helped to reduce infra costs by means of code optimization (e.g. making use of Sync Pool) and revising ASG policies via terraform.}
    }
    \item{
-     \textbf{Multi-modal route planner}{: This is a microservice to suggest best routing plan across various modalities, e.g. Trains, Buses and Grab rides. Initial implementation is adapted from the paper “Connection Scan Algorithm”. The service is a joint-work with a fellow team member.}
+     \textbf{Multi-modal route planner (Grab)}{: This is a microservice to suggest best routing plan across various modalities, e.g. Trains, Buses and/or Grab rides. Its approach is based on the paper “Connection Scan Algorithm”. Form an initial implementation by a fellow team member, I worked on getting it production-ready, fixed critical bugs, added tests and built visualization tools for correctness verification.}
    }
    \item{
-     \textbf{Grab for Business}{: Consists of a web portal, admin portal, revamp of Grab’s passenger app \& various other integration work with the rest of Grab internal system. The system as a whole allows businesses to manage ride policies, payment methods \& employees. Employees of enrolled businesses will be able to take corporate rides in accordance to the company’s pre-set policies.}
+     \textbf{\href{https://business.grab.com/}{Grab for Business}}{: Consisting of a web portal, admin portal, revamp of Grab’s passenger app \& various other integration work with the rest of Grab internal systems. The system as a whole allows businesses to manage ride policies, payment methods \& employees. Employees of enrolled businesses will be able to take corporate rides in accordance to the company’s pre-set policies.}
    }
    \item{
-     \textbf{Dispatcher}{: This is one of the major backend systems used in Grab that handles the sending/receiving of messages to/from driver such as a job broadcast to driver \& handling of bidding/cancelling etc. It broadcast jobs to driver using a persistent TCP connection to the driver. It is written using node.js. It initially uses the async library for control flow. I worked on the transition to use node-sync. I also worked on the separation of dispatcher into communication layer \& logic layer to achieve graceful restart that avoids the disconnection of every driver during every deployment.}
+     \textbf{Dispatcher (Grab)}{: This is one of the major backend systems used for sending/receiving of messages to/from driver such as a job broadcast to driver \& handling of bidding/cancelling etc. It broadcast jobs to driver using a persistent TCP connection to the driver. It is written using node.js. It initially uses the async library for control flow. I worked on the transition to use node-sync. I also worked on the separation of dispatcher into communication layer \& logic layer to achieve graceful restart that avoids the disconnection of every driver during every deployment.}
    }
    \item{
      \textbf{Rotation-invariant License Plate Detector (Final year project)}{: This is a license plate detector developed with Pedro F. Felzenszwalb \& Daniel P. Huttenlocher's graph-based image segmentation algorithm (their algorithm is open source but I have to port it over to use OpenCV). It uses variance- based features \& is integrated with libsvm. It is written in C++ with OpenCV. The algorithm does not achieve groundbreaking results compared to existing solutions, but it was a novel method \& provides the basis for future Computer-Vision related research.)}
@@ -222,13 +222,13 @@
 \section{Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Stacks}{: Ruby on Rails, ReactJS, hapi.js, GraphQL, Laravel, Silverlight}
+     \textbf{Stacks}{: \href{https://rubyonrails.org/}{Ruby on Rails}, \href{https://reactjs.org/}{ReactJS}, \href{https://nodejs.org/}{Node.js}, \href{https://graphql.org/}{GraphQL}, \href{https://framework.zend.com/}{Zend Framework}}
    }
    \item{
-     \textbf{Databases}{: MySQL, Sqlite, Redis}
+     \textbf{Databases}{: \href{https://www.mysql.com/}{MySQL}, Redis}
    }
    \item{
-     \textbf{Languages}{: Go, JavaScript, TypeScript, C, C++, PHP, C\#, Swift, Java, Rust, Ruby, SQL}
+     \textbf{Languages}{: \href{https://golang.org/}{Go}, JavaScript, C, C++, PHP, C\#, Java, Rust, Ruby, SQL}
    }
    \item{
      \textbf{Methodologies}{: Scrum, Kanban, Agile}
@@ -239,19 +239,19 @@
 \section{Publications}
  \resumeSubHeadingListStart
    \item{
-     {Visual Objects Classification with Sliding Spatial Pyramid Matching, 2012}{\\https://arxiv.org/abs/1212.3767}
+     {Visual Objects Classification with Sliding Spatial Pyramid Matching, 2012}{\\\textit{\href{https://arxiv.org/abs/1212.3767}{arxiv.org/abs/1212.3767}}}
    }
    \item{
-     {Detection of License Plate Characters in Natural Scene with MSER and SIFT unigram Classifier, 2010}{\\https://ieeexplore.ieee.org/document/5686998}
+     {Detection of License Plate Characters in Natural Scene with MSER and SIFT unigram Classifier, 2010}{\\\textit{\href{https://ieeexplore.ieee.org/document/5686998}{ieeexplore.ieee.org/document/5686998}}}
    }
    \item{
-     {Vehicle License Plate Detection using Unigram Model and Difference-of-SURF Bigram Model with SVM, 2009}{\\https://www.semanticscholar.org/paper/PLATE-DETECTION-USING-UNIGRAM-MODEL-AND-BIGRAM-WITH-Lim-Tay/fd81d1a75e49c0e96c57ec2a64a259ee22af99fc}
+     {Vehicle License Plate Detection using Unigram Model and Difference-of-SURF Bigram Model with SVM, 2009}{\\\textit{\href{https://www.semanticscholar.org/paper/PLATE-DETECTION-USING-UNIGRAM-MODEL-AND-BIGRAM-WITH-Lim-Tay/fd81d1a75e49c0e96c57ec2a64a259ee22af99fc}{semanticscholar.org/paper/PLATE-DETECTION-USING-UNIGRAM-MODEL-AND-BIGRAM-WITH-Lim-Tay/fd81d1a75e49c0e96c57ec2a64a259ee22af99fc}}}
    }
    \item{
-     {Two-stage License Plate Detection using Gentle Adaboost and SIFT-SVM, 2009}{\\https://ieeexplore.ieee.org/document/5175977}
+     {Two-stage License Plate Detection using Gentle Adaboost and SIFT-SVM, 2009}{\\\textit{\href{https://ieeexplore.ieee.org/document/5175977}{ieeexplore.ieee.org/document/5175977}}}
    }
    \item{
-     {Fast Adaptive Graph-based Segmentation with application in Vehicle License Plate Detection, 2008}{\\https://www.semanticscholar.org/paper/Fast-Adaptive-Graph-based-Segmentation-with-in-Lim-Tay/6f0128a7630687189a9fdcafd15111f8e461ebb0}
+     {Fast Adaptive Graph-based Segmentation with application in Vehicle License Plate Detection, 2008}{\\\textit{\href{https://www.semanticscholar.org/paper/Fast-Adaptive-Graph-based-Segmentation-with-in-Lim-Tay/6f0128a7630687189a9fdcafd15111f8e461ebb0}{semanticscholar.org/paper/Fast-Adaptive-Graph-based-Segmentation-with-in-Lim-Tay/6f0128a7630687189a9fdcafd15111f8e461ebb0}}}
    }
  \resumeSubHeadingListEnd
 
