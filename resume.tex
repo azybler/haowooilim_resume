@@ -154,7 +154,7 @@
       {Software Developer}{}
 
       \expDescription
-        {Developed/maintained a popular calendar widget for wordpress called timely \& GuideAdvisor site. Developed backend node.js-based API router that is covered by BDD test written with vows. Worked on features like performing filtering (selectize, select2), automatic layout (Masonry), infinite scrolling.}
+        {Developed/maintained a popular calendar widget for wordpress called timely \& GuideAdvisor site. Developed backend \href{https://nodejs.org/}{Node.js}-based API router that is covered by BDD test written with vows. Worked on features like filtering (selectize, select2), automatic layout (Masonry), infinite scrolling.}
 
     \expHeading
       {EzyPay}{Malaysia}{Jul. 2011 -- Jan. 2013 (2 years, 7 months)}
@@ -172,7 +172,7 @@
       {Research \& Development Engineer}{}
 
       \expDescription
-        {Developed software that manages Panasonic's various PBX system using the Qt library \& C\#. Tasked to understand existing large C++ codebase \& fix bugs in existing software, perform testing on software that sometimes require interfacing with hardware \& add new functionality according to hardware specifications.}
+        {Developed software that manages Panasonic's various PBX system using the Qt library \& C\#. Tasked to understand existing large C++ codebase \& fix bugs in existing software, performed testing on software that sometimes require interfacing with hardware \& add new functionality according to hardware specifications.}
 
   \resumeSubHeadingListEnd
 
@@ -180,7 +180,7 @@
 \section{Past \& Current Projects}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Snap-to-Road (Grab)}{: This is a microservice to accurately position drivers. It’s built with \href{https://golang.org/}{Go} \& Redis as the data store. Known as “\href{https://en.wikipedia.org/wiki/Map_matching}{map matching}” in the research community, our approach uses the hidden Markov model. Initial implementation is adapted from the paper “Hidden Markov Map Matching Through Noise \& Sparseness”. As the initial author of Snap-to-Road V3, I’m involved in the initiation \& planning phase and has successfully brought it to production. V3 has novel aspects not documented in the paper that enables real-time snapping that will be documented in a patent pending submission where I’m also one of the core authors. I also helped to reduce infra costs by means of code optimization (e.g. making use of Sync Pool) and revising ASG policies via terraform.}
+     \textbf{Snap-to-Road (Grab)}{: This is a microservice to accurately position drivers. It’s built with \href{https://golang.org/}{Go} \& \href{https://redis.io/}{Redis} as the data store. Known as “\href{https://en.wikipedia.org/wiki/Map_matching}{map matching}” in the research community, our approach uses the hidden Markov model. Initial implementation is adapted from the paper “Hidden Markov Map Matching Through Noise \& Sparseness”. As the initial author of Snap-to-Road V3, I’m involved in the initiation \& planning phase and has successfully brought it to production. V3 has novel aspects not documented in the paper that enables real-time snapping that will be documented in a patent pending submission where I’m also one of the core authors. I also helped to reduce infra costs by means of code optimization (e.g. making use of Sync Pool) and revising ASG policies via \href{https://www.terraform.io/}{Terraform}.}
    }
    \item{
      \textbf{Multi-modal route planner (Grab)}{: This is a microservice to suggest best routing plan across various modalities, e.g. Trains, Buses and/or Grab rides. Its approach is based on the paper “Connection Scan Algorithm”. Form an initial implementation by a fellow team member, I worked on getting it production-ready, fixed critical bugs, added tests and built visualization tools for correctness verification.}
@@ -189,10 +189,13 @@
      \textbf{\href{https://business.grab.com/}{Grab for Business}}{: Consisting of a web portal, admin portal, revamp of Grab’s passenger app \& various other integration work with the rest of Grab internal systems. The system as a whole allows businesses to manage ride policies, payment methods \& employees. Employees of enrolled businesses will be able to take corporate rides in accordance to the company’s pre-set policies.}
    }
    \item{
-     \textbf{Dispatcher (Grab)}{: This is one of the major backend systems used for sending/receiving of messages to/from driver such as a job broadcast to driver \& handling of bidding/cancelling etc. It broadcast jobs to driver using a persistent TCP connection to the driver. It is written using node.js. It initially uses the async library for control flow. I worked on the transition to use node-sync. I also worked on the separation of dispatcher into communication layer \& logic layer to achieve graceful restart that avoids the disconnection of every driver during every deployment.}
+     \textbf{Driver Onboarding (Grab)}{: Consisting of a web portal, admin portal, it is a system designed to improve the experience of signing up, vetting and onboarding drivers. The sign up form is designed with \href{https://reactjs.org/}{ReactJS} and optimized to load fast and responsive even on low-end smartphones.}
    }
    \item{
-     \textbf{Rotation-invariant License Plate Detector (Final year project)}{: This is a license plate detector developed with Pedro F. Felzenszwalb \& Daniel P. Huttenlocher's graph-based image segmentation algorithm (their algorithm is open source but I have to port it over to use OpenCV). It uses variance- based features \& is integrated with libsvm. It is written in C++ with OpenCV. The algorithm does not achieve groundbreaking results compared to existing solutions, but it was a novel method \& provides the basis for future Computer-Vision related research.)}
+     \textbf{Dispatcher (Grab)}{: This is one of the major backend systems used for sending/receiving of messages to/from driver such as a job broadcast to driver \& handling of bidding/cancelling etc. It broadcast jobs to driver using a persistent TCP connection to the driver. It is written using \href{https://nodejs.org/}{Node.js}. It initially uses the async library for control flow. I worked on the transition to use node-sync. I also worked on the separation of dispatcher into communication layer \& logic layer to achieve graceful restart that avoids the disconnection of every driver during every deployment.}
+   }
+   \item{
+     \textbf{Rotation-invariant License Plate Detector (Final year project)}{: This is a license plate detector developed with Pedro F. Felzenszwalb \& Daniel P. Huttenlocher's graph-based image segmentation algorithm (their algorithm is open source but I have to port it over to use OpenCV). It uses variance-based features \& is integrated with libsvm. It is written in C++ with OpenCV. The algorithm does not achieve groundbreaking results compared to existing solutions, but it was a novel method \& provides the basis for future Computer-Vision related research.)}
    }
  \resumeSubHeadingListEnd
 
@@ -223,13 +226,13 @@
 \section{Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Stacks}{: \href{https://rubyonrails.org/}{Ruby on Rails}, \href{https://reactjs.org/}{ReactJS}, \href{https://nodejs.org/}{Node.js}, \href{https://graphql.org/}{GraphQL}, \href{https://framework.zend.com/}{Zend Framework}}
+     \textbf{Stacks}{: \href{https://rubyonrails.org/}{Ruby on Rails}, \href{https://reactjs.org/}{ReactJS}, \href{https://nodejs.org/}{Node.js}, \href{https://graphql.org/}{GraphQL}, \href{https://framework.zend.com/}{Zend Framework}, \href{https://www.terraform.io/}{Terraform}}
    }
    \item{
-     \textbf{Databases}{: \href{https://www.mysql.com/}{MySQL}, Redis}
+     \textbf{Databases}{: \href{https://www.mysql.com/}{MySQL}, \href{https://redis.io/}{Redis}}
    }
    \item{
-     \textbf{Languages}{: \href{https://golang.org/}{Go}, JavaScript, C, C++, \href{https://www.php.net/}{PHP}, C\#, Java, \href{https://www.rust-lang.org/}{Rust}, Ruby, SQL}
+     \textbf{Languages}{: \href{https://golang.org/}{Go}, JavaScript, C/C++, \href{https://www.php.net/}{PHP}, C\#, Java, \href{https://www.rust-lang.org/}{Rust}, Ruby, SQL}
    }
    \item{
      \textbf{Methodologies}{: Scrum, Kanban, Agile}
