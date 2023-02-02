@@ -56,12 +56,24 @@
   \vspace{0pt}
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2
-    \end{tabular*}\vspace{-18pt}
+    \end{tabular*}\vspace{-15pt}
+}
+
+\newcommand{\expTechUsed}[1]{
+  \vspace{0pt}
+  \textbf{Technologies}: {#1}
+  \vspace{0pt}
 }
 
 \newcommand{\expDescription}[1]{
   \vspace{0pt}
   \textbf{Responsibilities}: {#1}
+  \vspace{0pt}
+}
+
+\newcommand{\expProject}[1]{
+  \vspace{0pt}
+  \textbf{Projects}: {#1}
   \vspace{6pt}
 }
 
@@ -117,10 +129,44 @@
   \resumeSubHeadingListStart
 
     \expHeading
-      {Canva}{Sydney, Australia}{Mar. 2021 -- Now}
+      {Nine}{Sydney, Australia}{Sep. 2021 -- Now}
 
     \expSubHeading
-      {Software Engineer (Backend)}{Mar. 2021 -- Now}
+      {Software Engineer (Backend)}{Sep. 2021 -- Now}
+
+    \expTechUsed
+      {Golang, GraphQL, React JS, TypeScript, Kubernetes, SQS, Postgres}
+
+    \expDescription
+      {
+        \begin{enumerate}
+          \item Developed/maintained Nine's new election backend system \& election widgets to replace a legacy election system with a more modern infra to better handle increased user traffic \& improved UX.
+          \item Written scripts \& performed data migration from legacy CQ system to Nine's current backend as part of an effort to deprecate legacy systems.
+          \item Developed/maintained Nine's Good Food \& Traveller sub-brand web site.
+          \item Performed on-call duties to investigate production issues \& timely deployment of features.
+          \item Performed code review \& peer-testing to ensure the team's work are of high standard.
+        \end{enumerate}
+      }
+
+    \expHeading
+      {Canva}{Sydney, Australia}{Jan. 2021 -- Sep 2021 (8 months)}
+
+    \expSubHeading
+      {Software Engineer (Backend)}{Jan. 2021 -- Sep 2021 (8 months)}
+
+    \expTechUsed
+      {Java, DynamoDB, Terraform, React JS, AWS, MySQL}
+
+    \expDescription
+      {
+        \begin{enumerate}
+          \item Developed/maintained Canva's folder backend to improve stability \& support new business requirements.
+          \item Designed/developed as part of a team of 3 to migrate all documents to a new data scheme to support a new View called "Your Projects".
+          \item Migrated legacy folder APIs from reading/writing to MySQL to DynamoDB as part of effort to modernize the data backend \& better handle increased user traffic. \& 
+          \item Performed on-call duties to investigate production issues \& responds to customer tickets.
+          \item Performed code review to ensure the team's work are of high standard.
+        \end{enumerate}
+      }
 
     \expDescription
       {Developed/maintained Canva's Content management system.}
@@ -131,17 +177,34 @@
     \expSubHeading
       {Senior Backend Engineer}{Jul. 2018 -- Sep. 2020 (2 years, 2 months)}
 
-      \expDescription
-        {Developed/maintained several Grab's geographical systems, e.g. multi-modal route planner, \href{https://en.wikipedia.org/wiki/Map_matching}{map-matching} (Snap-to-Road), routing, and ETA calculation. Additionally, performed on-call duties, e.g. assists in investigations, debugging production issues.}
+    \expTechUsed
+      {Golang, Redis, JavaScript, AWS, Terraform, SQS}
+
+    \expDescription
+      {
+        \begin{enumerate}
+          \item Spearheaded \& coordinated efforts to develop Snap-to-Road v3 to replace current Snap to Road system to enable real-time snapping of raw driver GPS location. System is launched with 41\% reduction in latency (12ms to 7ms) \& 60\% reduction in AWS infra cost.
+          \item Developed/maintained a multi-modal route planner based on the "Connection Scan Algorithm" to enable route planning functionality on app.
+          \item Developed internal visualization tools to help diagnose tricky Snap-to-Road failures.
+          \item Performed on-call duties to investigate production issues \& responds to customer tickets.
+          \item Performed code review to ensure the team's work are of high standard.
+        \end{enumerate}
+      }
 
     \expSubHeading
       {Senior Full Stack Developer}{Jan. 2016 -- Jun. 2018 (2 years, 6 months)}
 
-      \expDescription
-        {Developed/maintained Grab's various internal \& public-facing web apps, e.g. Driver Onboarding Platform, Share My Ride, \href{https://business.grab.com/}{Grab for Business}, FlagsView using technologies like \href{https://rubyonrails.org/}{Ruby on Rails}, JavaScript, \href{https://reactjs.org/}{ReactJS}, \href{https://graphql.org/}{GraphQL} \& \href{https://www.mysql.com/}{MySQL}.}
+    \expTechUsed
+      {Ruby on Rails, React JS, AWS, MySQL}
+
+    \expDescription
+      {Developed/maintained Grab's various internal \& public-facing web apps, e.g. Driver Onboarding Platform, Share My Ride, \href{https://business.grab.com/}{Grab for Business}, FlagsView using technologies like \href{https://rubyonrails.org/}{Ruby on Rails}, JavaScript, \href{https://reactjs.org/}{ReactJS}, \href{https://graphql.org/}{GraphQL} \& \href{https://www.mysql.com/}{MySQL}.}
 
     \expSubHeading
       {Senior Node.js Developer}{Jul. 2014 -- Jun. 2014 (1 year, 6 months)}
+
+    \expTechUsed
+      {Node.JS, AWS, MySQL}
 
       \expDescription
         {Developed/maintained Dispatcher (one of the early core systems of Grab, responsible for notification, bidding \& acceptance of all rides). Technologies like \href{https://nodejs.org/}{Node.js}, \href{https://www.mysql.com/}{MySQL} is used.}
@@ -188,16 +251,16 @@
 \section{Past \& Current Projects}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Snap-to-Road (Grab)}{: This is a microservice to accurately position drivers. It’s built with \href{https://golang.org/}{Go} \& \href{https://redis.io/}{Redis} as the data store. Known as “\href{https://en.wikipedia.org/wiki/Map_matching}{map matching}” in the research community, our approach uses the hidden Markov model. Initial implementation is adapted from the paper “Hidden Markov Map Matching Through Noise \& Sparseness”. As the initial author of Snap-to-Road V3, I’m involved in the initiation \& planning phase and has successfully brought it to production. V3 has novel aspects not documented in the paper that enables real-time snapping that will be documented in a patent pending submission where I’m also one of the core authors. I also helped to reduce infra costs by means of code optimization (e.g. making use of Sync Pool) and revising ASG policies via \href{https://www.terraform.io/}{Terraform}.}
+     \textbf{Snap-to-Road (Grab)}{: This is a microservice to accurately position drivers. It’s built with \href{https://golang.org/}{Go} \& \href{https://redis.io/}{Redis} as the data store. Known as “\href{https://en.wikipedia.org/wiki/Map_matching}{map matching}” in the research community, our approach uses the hidden Markov model. Initial implementation is adapted from the paper “Hidden Markov Map Matching Through Noise \& Sparseness”. As the initial author of Snap-to-Road V3, I’m involved in the initiation \& planning phase \& has successfully brought it to production. V3 has novel aspects not documented in the paper that enables real-time snapping that will be documented in a patent pending submission where I’m also one of the core authors. I also helped to reduce infra costs by means of code optimization (e.g. making use of Sync Pool) \& revising ASG policies via \href{https://www.terraform.io/}{Terraform}.}
    }
    \item{
-     \textbf{Multi-modal route planner (Grab)}{: This is a microservice to suggest best routing plan across various modalities, e.g. Trains, Buses and/or Grab rides. Its approach is based on the paper “Connection Scan Algorithm”. Form an initial implementation by a fellow team member, I worked on getting it production-ready, fixed critical bugs, added tests and built visualization tools for correctness verification.}
+     \textbf{Multi-modal route planner (Grab)}{: This is a microservice to suggest best routing plan across various modalities, e.g. Trains, Buses and/or Grab rides. Its approach is based on the paper “Connection Scan Algorithm”. Form an initial implementation by a fellow team member, I worked on getting it production-ready, fixed critical bugs, added tests \& built visualization tools for correctness verification.}
    }
    \item{
      \textbf{\href{https://business.grab.com/}{Grab for Business}}{: Consisting of a web portal, admin portal, revamp of Grab’s passenger app \& various other integration work with the rest of Grab internal systems. The system as a whole allows businesses to manage ride policies, payment methods \& employees. Employees of enrolled businesses will be able to take corporate rides in accordance to the company’s pre-set policies.}
    }
    \item{
-     \textbf{Driver Onboarding (Grab)}{: Consisting of a web portal, admin portal, it is a system designed to improve the experience of signing up, vetting and onboarding drivers. The sign up form is designed with \href{https://reactjs.org/}{ReactJS} and optimized to load fast and responsive even on low-end smartphones.}
+     \textbf{Driver Onboarding (Grab)}{: Consisting of a web portal, admin portal, it is a system designed to improve the experience of signing up, vetting \& onboarding drivers. The sign up form is designed with \href{https://reactjs.org/}{ReactJS} \& optimized to load fast \& responsive even on low-end smartphones.}
    }
    \item{
      \textbf{Dispatcher (Grab)}{: This is one of the major backend systems used for sending/receiving of messages to/from driver such as a job broadcast to driver \& handling of bidding/cancelling etc. It broadcast jobs to driver using a persistent TCP connection to the driver. It is written using \href{https://nodejs.org/}{Node.js}. It initially uses the async library for control flow. I worked on the transition to use node-sync. I also worked on the separation of dispatcher into communication layer \& logic layer to achieve graceful restart that avoids the disconnection of every driver during every deployment.}
